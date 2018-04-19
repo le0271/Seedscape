@@ -1,4 +1,4 @@
-var ASPECT_RATIO = 4/3, height, width;
+var ASPECT_RATIO = 4/3, width;
 var canvas, context;
 var objects = [];
 
