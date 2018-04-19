@@ -296,4 +296,3 @@ var COLORS = {
 	black: "#000000",
 	whiet: "#000000",
 }
-console.log(COLORS.red._50);
