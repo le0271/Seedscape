@@ -6,7 +6,7 @@ var	canvas,
 	width;
 // Data
 var objects = [],
-	items = [];
+	items = new Map();
 // Constants
 var	ASPECT_RATIO = 4 / 3,
 	BORDER_RATIO = 1 / 20,
