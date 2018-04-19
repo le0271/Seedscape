@@ -8,9 +8,9 @@ var	canvas,
 var objects = [],
 	items = new Map();
 // Constants
-var	ASPECT_RATIO = 4 / 3,
-	BORDER_RATIO = 1 / 20,
-	TICKS_PER_SECOND = 30;
+const	ASPECT_RATIO = 4 / 3,
+		BORDER_RATIO = 1 / 20,
+		TICKS_PER_SECOND = 30;
 window.addEventListener("load", load);
 function load() {
 	canvas = document.querySelector("canvas");

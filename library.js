@@ -1,4 +1,4 @@
-var COLORS = {
+const COLORS = {
 	red: {
 		_50:	"#FFEBEE",
 		_100:	"#FFCDD2",
@@ -294,5 +294,5 @@ var COLORS = {
 		_900:	'#263238',
 	},
 	black: "#000000",
-	whiet: "#000000",
+	white: "#000000",
 }
