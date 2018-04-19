@@ -10,13 +10,20 @@ function load() {
 
     objects.push({
         name: "Shop", 
-        render: function() {},
+        render: function() {
+            context.fillStyle = "white";
+            context.fillRect(0, 0, 0.20 * width, 0.75 * width);
+        },
         tick: function() {},
     }); 
 
     objects.push({
         name: "Board", 
-        render: function() {},
+        render: function() {
+            context.fillStyle = "white";
+            context.fillRect(0.25 * width, 0.05 * width, 0.50 * width, 0.50 * width);
+            
+        },
         tick: function() {},
     }); 
 
