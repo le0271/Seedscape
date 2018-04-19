@@ -71,7 +71,7 @@ function load() {
 				context.lineTo(x + 0.72 * l, y + 0.36 * l);
 				context.lineTo(x + 0.64 * l, y + 0.48 * l);
 				context.lineTo(x + 0.52 * l, y + 0.60 * l);
-				context.fillStyle = "#FFEB3B";
+				context.fillStyle = COLORS.yellow._500;
 				context.fill();
 				context.closePath();
 				// Handle shadow
@@ -80,7 +80,7 @@ function load() {
 				context.lineTo(x + 0.52 * l, y + 0.60 * l);
 				context.lineTo(x + 0.40 * l, y + 0.72 * l);
 				context.lineTo(x + 0.28 * l, y + 0.60 * l);
-				context.fillStyle = "#388E3C";
+				context.fillStyle = COLORS.green._700;
 				context.fill();
 				context.closePath();
 				// Handle highlight
@@ -89,7 +89,7 @@ function load() {
 				context.lineTo(x + 0.40 * l, y + 0.72 * l);
 				context.lineTo(x + 0.20 * l, y + 0.80 * l);
 				context.lineTo(x + 0.28 * l, y + 0.60 * l);
-				context.fillStyle = "#4CAF50";
+				context.fillStyle = COLORS.green._500;
 				context.fill();
 				context.closePath();
 				// Lower leaf
@@ -97,7 +97,7 @@ function load() {
 				context.moveTo(x + 0.40 * l, y + 0.48 * l);
 				context.lineTo(x + 0.52 * l, y + 0.60 * l);
 				context.lineTo(x + 0.52 * l, y + 0.80 * l);
-				context.fillStyle = "#43A047";
+				context.fillStyle = COLORS.green._600;
 				context.fill();
 				context.closePath();
 				// Upper leaf
@@ -105,7 +105,7 @@ function load() {
 				context.moveTo(x + 0.40 * l, y + 0.48 * l);
 				context.lineTo(x + 0.52 * l, y + 0.60 * l);
 				context.lineTo(x + 0.20 * l, y + 0.48 * l);
-				context.fillStyle = "#4CAF50";
+				context.fillStyle = COLORS.green._500;
 				context.fill();
 				context.closePath();
 			}
