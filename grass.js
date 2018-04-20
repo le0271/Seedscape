@@ -1,6 +1,6 @@
 load_sequence.push(
-    function() {
-        items.set("grass", {
+	function () {
+		items.set("grass", {
 			click_amount: 1,
 			cost: [["water", 1]],
 			growth_amount: 4,
