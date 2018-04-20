@@ -1,5 +1,5 @@
 load_sequence.push(
-    function() {
+	function () {
 		items.set("corn", {
 			click_amount: 1,
 			cost: [["water", 1]],
