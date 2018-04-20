@@ -21,6 +21,7 @@ function load() {
 	}
 
 	window.addEventListener("resize", resize);
-	resize();
+    resize();
+    canvas.addEventListener("click", click);
 	setInterval(tick, 1000 / TICKS_PER_SECOND);
 }
