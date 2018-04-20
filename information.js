@@ -1,6 +1,7 @@
 load_sequence.push(
 	function() {
 		objects.push({
+			click: function() {},
 			name: "Information", 
 			render: function() {
 				context.fillStyle = COLORS.grey._50;
