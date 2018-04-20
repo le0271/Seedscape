@@ -5,10 +5,13 @@ var canvas,
 	context,
 	width;
 // Data
-var objects = [],
+var board = [],
+	board_length = 2,
+	objects = [],
 	items = new Map();
 // Constants
-const ASPECT_RATIO = 4 / 3,
+const
+	ASPECT_RATIO = 4 / 3,
 	BORDER_RATIO = 1 / 20,
 	TICKS_PER_SECOND = 30;
 window.addEventListener("load", load);

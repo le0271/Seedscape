@@ -1,7 +1,9 @@
 load_sequence.push(
 	function () {
 		objects.push({
-			click: function () { },
+			click: function (click_x, click_y) { 
+				
+			},
 			name: "Board",
 			render: function () {
 				context.fillStyle = COLORS.grey._50;
