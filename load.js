@@ -5,8 +5,8 @@ var canvas,
 	context,
 	width;
 // Data
-var board = [],
-	board_length = 2,
+var board = [null],
+	board_length = 1,
 	objects = [],
 	items = new Map();
 // Constants
