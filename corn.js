@@ -1,3 +1,4 @@
+"use strict";
 load_sequence.push(
 	function () {
 		items.set("corn", {
@@ -10,7 +11,7 @@ load_sequence.push(
 			product: "corn",
 			product_amount: 4,
 			product_value: 35,
-			render: function (x, y, l) {
+			render: function (x, y, l, s) {
 				// x, x-position; y, y-position; l, length; s, stage;
 				// Stage 0 - seeds
 				// Stage 1 - corn

@@ -1,3 +1,4 @@
+"use strict";
 // Load data
 var load_sequence = [];
 // Rendering
@@ -5,9 +6,7 @@ var canvas,
 	context,
 	width;
 // Data
-var board = [null],
-	board_length = 1,
-	objects = [],
+var objects = new Map(),
 	items = new Map();
 // Constants
 const
@@ -18,13 +17,15 @@ window.addEventListener("load", load);
 function load() {
 	canvas = document.querySelector("canvas");
 	context = canvas.getContext("2d");
-
 	for (var i = 0; i < load_sequence.length; i++) {
 		load_sequence[i]();
 	}
-
+	for (var object of objects) {
+		object[1].load();
+	}
 	window.addEventListener("resize", resize);
     resize();
-    canvas.addEventListener("click", click);
+	canvas.addEventListener("click", click);
+	canvas.addEventListener("mousemove", hover);
 	setInterval(tick, 1000 / TICKS_PER_SECOND);
 }

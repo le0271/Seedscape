@@ -1,3 +1,4 @@
+"use strict";
 load_sequence.push(
 	function () {
 		items.set("grass", {

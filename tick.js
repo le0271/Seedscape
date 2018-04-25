@@ -1,6 +1,7 @@
+"use strict";
 function tick() {
-	for (var i = 0; i < objects.length; i++) {
-		objects[i].tick();
+	for (var object of objects) {
+		object[1].tick();
 	}
 	render();
 }
