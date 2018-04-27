@@ -7,7 +7,7 @@ var action = function () {
 		hover: function (hover_x, hover_y) {
 			if (0.25 < hover_x && hover_x < 0.75 && 0.05 < hover_y && hover_y < 0.55) {
 				var box_size = 0.50 / this.tile_grid_size; // In fraction
-				this.tile_hover = [Math.floor((hover_x - 0.25) / box_size), Math.floor((hover_y - 0.05) / box_size)]
+				this.tile_hover = [Math.floor((hover_x - 0.25) / box_size), Math.floor((hover_y - 0.05) / box_size)];
 			} else {
 				this.tile_hover = null;
 			}
@@ -47,7 +47,11 @@ var action = function () {
 
 		},
 		tick: function () {
-
+			for (var tile of this.tiles) {
+				if (tile != null) {
+					tile.time_progress = Math.max(tile.time_progress);
+				}
+			}
 		},
 		tile_grid_size: 2,
 		tile_grid_size_increment: function () {
@@ -64,7 +68,9 @@ var action = function () {
 		},
 		tile_hover: null,
 		tile_set: function (x, y, name) {
-
+			if (tile_database.has(name)) {
+				this.tiles[y * this.tile_grid_size + x] = tile_create(name);
+			}
 		},
 		tiles: [tile_create("water"), tile_create("corn"), null, null],
 	});

@@ -2,29 +2,40 @@
 <html>
 
 <head>
-	<link rel="stylesheet" href="style.css">
-	<!--Preload-->
-	<script src="library.js"></script>
-	<!--Load-->
-	<script src="load.js"></script>
-	<!--Postload-->
-	<script src="board.js"></script>
-	<script src="click.js"></script>
-	<script src="corn.js"></script>
-	<script src="grass.js"></script>
-	<script src="hover.js"></script>
-	<script src="information.js"></script>
-	<script src="render.js"></script>
-	<script src="resize.js"></script>
-	<script src="shop.js"></script>
-	<script src="storage.js"></script>
-	<script src="tick.js"></script>
-	<script src="water.js"></script>
-	<title>Seedscape</title>
+	<script>
+		var iframe;
+		window.addEventListener("load",
+			function () {
+				iframe = document.querySelector("iframe");
+				window.addEventListener("resize", resize);
+				resize();
+			}
+		);
+		function resize() {
+			iframe.height = window.innerHeight;
+			iframe.width = window.innerWidth;
+		}
+	</script>
+	<style>
+		body {
+			box-sizing: border-box;
+			height: 100vh;
+			margin: 0;
+			overflow-x: hidden; 
+			overflow-y: hidden;
+			width: 100vw;
+		}
+
+		iframe {
+			border: 0;
+			box-sizing: border-box;
+			outline: none;
+		}
+	</style>
 </head>
 
 <body>
-	<canvas></canvas>
+	<iframe src="game.html"></iframe>
 </body>
 
 </html>
