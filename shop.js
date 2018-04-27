@@ -12,4 +12,4 @@ var action = function () {
 		tick: function () { },
 	});
 };
-load_sequence_add(action, 2);
+load_sequence_add(action, 1);

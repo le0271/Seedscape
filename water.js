@@ -13,7 +13,7 @@ var action = function () {
 		render: function (x, y, l, s) {
 			// x, x-position; y, y-position; l, length; s, stage;
 			// Background
-			context.fillStyle = COLORS.light_blue._500;
+			context.fillStyle = COLORS.light_blue._300;
 			context.fillRect(x, y, l, l);
 		},
 	});
